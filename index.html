@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Test</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="container text-center">
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">MadLibs (Jingle All The Way)</h1>
+</div>
+<div id="resultsDisplay" class="d-none lead">
+</div>
+
+<form class="needs-validation" name="madLibsForm">
+  <div class="form-group row">
+    <label for="noun1" class="col-sm-3 form-control-label">Noun</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="noun1" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="noun1" class="btn btn-primary col-sm-3" onclick="loadNouns(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="adjective1" class="col-sm-3 form-control-label">Adjective</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="adjective1" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="adjective1" class="btn btn-primary col-sm-3"
+            onclick="loadAdjs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="noun2" class="col-sm-3 form-control-label">Noun</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="noun2" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="noun2" class="btn btn-primary col-sm-3" onclick="loadNouns(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="verb1" class="col-sm-3 form-control-label">Verb</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="verb1" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="verb1" class="btn btn-primary col-sm-3" onclick="loadVerbs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="adjective2" class="col-sm-3 form-control-label">Adjective</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="adjective2" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="adjective2" class="btn btn-primary col-sm-3"
+            onclick="loadAdjs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="adjective3" class="col-sm-3 form-control-label">Adjective</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="adjective3" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="adjective3" class="btn btn-primary col-sm-3"
+            onclick="loadAdjs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="verb2" class="col-sm-3 form-control-label">Verb</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="verb2" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="verb2" class="btn btn-primary col-sm-3" onclick="loadVerbs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="verb3" class="col-sm-3 form-control-label">Verb</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="verb3" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="verb3" class="btn btn-primary col-sm-3" onclick="loadVerbs(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="noun3" class="col-sm-3 form-control-label">Noun</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="noun3" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="noun3" class="btn btn-primary col-sm-3" onclick="loadNouns(this.value)">Random</button>
+  </div>
+
+  <div class="form-group row">
+    <label for="verb4" class="col-sm-3 form-control-label">Verb</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="verb4" placeholder="" required>
+      <div class="invalid-feedback">
+        Please fill field.
+      </div>
+    </div>
+    <button type="button" value="verb4" class="btn btn-primary col-sm-3" onclick="loadVerbs(this.value)">Random</button>
+  </div>
+  <button type="button" class="btn btn-danger" onclick="madLibs(event)">MadLibs</button>
+</form>
+<script src="app.js"></script>
+</body>
+</html>
